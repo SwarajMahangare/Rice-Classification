@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Classification Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rice Classification Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#dataset">Dataset</a></li>
+                <li><a href="#eda">Exploratory Data Analysis</a></li>
+                <li><a href="#models">Machine Learning Models</a></li>
+                <li><a href="#results">Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dataset Section -->
+        <section id="dataset">
+            <h2>Dataset Overview</h2>
+            <p>The dataset contains information about different rice grains for classification. Below are sample rows:</p>
+            <pre>
+ID,Area,MajorAxisLength,MinorAxisLength,Eccentricity,Class
+1,5000.5,75.6,45.3,0.87,Class1
+2,4500.7,70.4,42.7,0.85,Class2
+3,5200.8,78.2,46.1,0.88,Class1
+...
+            </pre>
+            <p>The target variable is <strong>Class</strong>, which is the rice category.</p>
+        </section>
+
+        <!-- EDA Section -->
+        <section id="eda">
+            <h2>Exploratory Data Analysis</h2>
+            <p>Key visualizations provide insights into feature correlations and distributions:</p>
+            <img src="heatmap.png" alt="Heatmap" width="600">
+            <img src="pairplot.png" alt="Pair Plot" width="600">
+        </section>
+
+        <!-- Machine Learning Models Section -->
+        <section id="models">
+            <h2>Machine Learning Models</h2>
+            <p>The following models were implemented to classify the rice grains:</p>
+            <ul>
+                <li><strong>Logistic Regression:</strong> Accuracy = 90%</li>
+                <li><strong>Decision Tree:</strong> Accuracy = 87%</li>
+                <li><strong>Random Forest:</strong> Accuracy = 92%</li>
+                <li><strong>SVM:</strong> Accuracy = 91%</li>
+                <li><strong>k-NN:</strong> Accuracy = 89%</li>
+            </ul>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results">
+            <h2>Results and Analysis</h2>
+            <p>The Random Forest model performed the best with 92% accuracy. Below is the confusion matrix for Logistic Regression:</p>
+            <img src="confusion_matrix.png" alt="Confusion Matrix" width="600">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rice Classification Project. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
